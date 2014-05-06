@@ -1,17 +1,17 @@
-# Shoot It Yourself
+# {{ site.book_title }}
 
-Photo book by Ignacio Galvez
+Photo book by {{ site.book_author }}
 
 
 ## Creators
 
 ### Photos
 
-By [Ignacio Galvez](http://ignaciogalvez.com) / ([@xignaciox](https://twitter.com/xignaciox))
+By [{{ site.book_author_photos }}]({{ site.book_author_photos_url }}) / ([@{{ site.book_author_photos_twitter }}](https://twitter.com/{{ site.book_author_photos_twitter }}))
 
 ### Words
 
-By [Ignacio Galvez](http://ignaciogalvez.com) / ([@xignaciox](https://twitter.com/xignaciox)), et al
+By [{{ site.book_author_photos }}]({{ site.book_author_photos_url }}) / ([@{{ site.book_author_photos_twitter }}](https://twitter.com/{{ site.book_author_photos_twitter }}))
 
 
 ## License
