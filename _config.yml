@@ -1,24 +1,24 @@
-book_author:                Ignacio Galvez
-book_author_photos:         Ignacio Galvez
-book_author_photos_twitter: xignaciox
-book_author_photos_url:     http://ignaciogalvez.com
-book_author_words:          Ignacio Galvez
-book_author_words_twitter:  xignaciox
-book_author_words_url:      http://ignaciogalvez.com
-book_domain:                shootityourselfbook.com
-book_image_cover:           http://assets.farmhouse.co/publishing/1-shoot-it-yourself/images/_cover.jpg
-book_image_logo:            http://assets.farmhouse.co/publishing/1-shoot-it-yourself/images/_logo.png
-book_image_path:            http://assets.farmhouse.co/publishing/1-shoot-it-yourself/images/
-book_isbn:                  978-0-9960982-2-9
-book_published_year:        2014
+book_author:                <%= @book_author %>
+book_author_photos:         <%= @book_author %>
+book_author_photos_twitter: <%= @book_author_twitter %>
+book_author_photos_url:     <%= @book_author_url %>
+book_author_words:          <%= @book_author %>
+book_author_words_twitter:  <%= @book_author_twitter %>
+book_author_words_url:      <%= @book_author_url %>
+book_domain:                <%= @book_domain %>
+book_image_cover:           http://assets.farmhouse.co/publishing/<%= @fhp_id %>-<%= @book_slug %>/images/_cover.jpg
+book_image_logo:            http://assets.farmhouse.co/publishing/<%= @fhp_id %>-<%= @book_slug %>/images/_logo.png
+book_image_path:            http://assets.farmhouse.co/publishing/<%= @fhp_id %>-<%= @book_slug %>/images/
+book_isbn:                  <%= @book_isbn %>
+book_published_year:        <%= @book_published_year || Time.now.year %>
 book_publisher_name:        Farmhouse Publishing
-book_publisher_url:         http://farmhouse.co/publishing/1
-book_slug:                  shoot-it-yourself
-book_title:                 Shoot It Yourself
-fhp_id:                     1
+book_publisher_url:         http://farmhouse.co/publishing/<%= @fhp_id %>
+book_slug:                  <%= @book_slug %>
+book_title:                 <%= @book_title %>
+fhp_id:                     <%= @fhp_id %>
 google_analytics_id:        UA-XXXXX-X
 markdown:                   kramdown
 purchase_ebook_price:       5
-purchase_ebook_url:         http://shop.farmhouse.co/collections/frontpage/products/shoot-it-yourself-paperback
+purchase_ebook_url:         http://farmhouse.co/publishing/<%= @fhp_id %>/buy/ebook
 purchase_print_price:       20
-purchase_print_url:         http://shop.farmhouse.co/collections/frontpage/products/shoot-it-yourself-paperback
+purchase_print_url:         http://farmhouse.co/publishing/<%= @fhp_id %>/buy/paperback
